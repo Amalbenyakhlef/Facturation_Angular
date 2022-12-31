@@ -21,6 +21,7 @@ body{
 
 .container .card{
   position: relative;
+  flex: 1;
   width: 320px;
   height: 450px;
   background: #232323;
@@ -45,7 +46,7 @@ body{
 }
 
 .container .card:after{
-  content: 'Nike';
+  content: 'N°';
   position: absolute;
   top: 30%;
   left: -20%;
@@ -101,7 +102,7 @@ body{
   margin: 0;
 }
 
-.container .card .contentBx .size, .container .card .contentBx .color {
+.container .card .contentBx .size, .container .card .contentBx .color .price {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -134,7 +135,7 @@ body{
 }
 
 .container .card .contentBx .size span{
-  width: 26px;
+  width: 50px;
   height: 26px;
   text-align: center;
   line-height: 26px;
@@ -176,17 +177,17 @@ body{
 
 .container .card .contentBx a{
   display: inline-block;
-  padding: 10px 20px;
+  padding: 5px 20px;
   background: #fff;
   border-radius: 4px;
   margin-top: 10px;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 500;
   color: #111;
   opacity: 0;
   transform: translateY(50px);
   transition: 0.5s;
-  margin-top: 0;
+  margin-top: 30;
 }
 
 .container .card:hover .contentBx a{
@@ -194,4 +195,31 @@ body{
   transform: translateY(0px);
   transition-delay: 0.75s;
   
+}
+
+
+.flex_facture {
+  display: flex;
+  gap: 5rem;
+
+}
+
+.container .card .contentBx .price span{
+  width: 70px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  display: inline-block;
+  color: #111;
+  background: #fff;
+  margin: 3 5px;
+  transition: 0.5s;
+  color: #111;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.container .card .contentBx .price span:hover{
+  background: #60e4f5;
 }

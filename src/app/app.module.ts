@@ -20,6 +20,8 @@ import { SidenavComponent } from './shared/sidenav/sidenav.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { HighchartsChartModule } from 'highcharts-angular';
 import { HighchartStatisticComponent } from './shared/highchart-statistic/highchart-statistic.component';
+import { LoginComponent } from './login/login.component';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +30,8 @@ import { HighchartStatisticComponent } from './shared/highchart-statistic/highch
     HomeComponent,
     SidenavComponent,
     FooterComponent,
-    HighchartStatisticComponent
+    HighchartStatisticComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -45,6 +48,7 @@ import { HighchartStatisticComponent } from './shared/highchart-statistic/highch
     MatButtonModule,
     MatDividerModule,
     HighchartsChartModule,
+    HttpClientModule
     
   ],
   providers: [],
